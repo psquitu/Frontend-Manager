@@ -1,0 +1,287 @@
+.flash-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.flash-error {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    border: 1px solid #ebccd1;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.flash-success p, .flash-error p {
+    padding: 0;
+    margin: 0;
+}
+
+.wpfm-dashboard-container, .wpfm-form {
+    width: 100%;
+}
+
+.wpfm-dashboard-container {
+    display: flex;
+}
+
+.wpfm-dashboard-container .mt-2 {
+    margin-top: 2rem !important;
+}
+
+.wpfm-dashboard-container .mt-3 {
+    margin-top: 3rem !important;
+}
+
+.wpfm-dashboard-container input[type='text'], .wpfm-dashboard-container input[type='tel'],
+.wpfm-dashboard-container input[type='email'], .wpfm-dashboard-container input[type='search'],
+.wpfm-dashboard-container input[type='password'], .wpfm-dashboard-container textarea {
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 0.4em 0.7em;
+}
+
+.wpfm-dashboard-container form input[type="submit"],
+.wpfm-dashboard-container form button[type="submit"] {
+    border: none;
+    border-radius: 4px;
+    background: #2866c8;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.wpfm-dashboard-container form input[type="submit"]:hover,
+.wpfm-dashboard-container form button[type="submit"]:hover {
+    background: #f10202;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation {
+    width: 200px;
+    background-color: #2866c8;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content {
+    width: calc(100% - 200px);
+    padding: 20px;
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation ul {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation ul li {
+    padding: 3% 9%;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation ul li.active {
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+    margin-right: -15px;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-navigation ul li.active a {
+    color: #0c0c0c;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content table.items-table {
+    width: 100%;
+    margin-top: 0;
+    border: 1px solid #dae1f5;
+    color: #000 !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content table.items-table tr {
+    text-align: left;
+    border: 1px solid #dae1f5;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content table.items-table tr th:first-child {
+    width: 60%;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content table.items-table tr th, table.items-table tr td {
+    border: 0;
+    padding: 10px;
+}
+
+.wpfm-dashboard-container .wpfm-dashboard-content table tr:nth-of-type(even) {
+    background: #ededed;
+}
+
+.wpfm-dashboard-container .wpfm-account-pagination .container {
+    width: 100%;
+}
+
+.invalid-captcha > div,
+.invalid-captcha iframe .recaptcha-checkbox-border {
+    border: 1px solid #a94442;
+}
+
+.wpfm-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.wpfm-fields-inline {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.wpfm-eye {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 17px;
+}
+
+.wpfm-eye:hover {
+    cursor: pointer;
+}
+
+.wpfm-form-sub-label, .wpfm-links-wrap {
+    font-size: 16px;
+}
+
+.wpfm-links-wrap {
+    padding-top: 5px;
+}
+
+.wpfm-links-wrap a:not(:first-child) {
+    padding-left: 5px;
+}
+
+.wpfm-links-wrap a:not(:last-child) {
+    padding-right: 5px;
+}
+
+.featured-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.featured-image img {
+    margin-left: 15px;
+}
+
+.wpfm-message {
+    background: #fcf8e3;
+    border: 1px solid #faebcc;
+    color: #8a6d3b;
+    margin: 10px 0 20px 0;
+    padding: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.wpfm-flash-message p,
+.single-page .wpfm-flash-message p {
+    line-height: 1;
+}
+
+.wpfm-help {
+    font-size: 16px;
+    font-style: italic;
+}
+
+body .pass-strength-result {
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    margin: 0;
+    padding: 3px 5px;
+    text-align: center;
+    width: 200px;
+    display: none;
+    background-color: #eee;
+    border-color: #ddd !important;
+}
+
+body .pass-strength-result.bad {
+    background-color: #ffb78c;
+    border-color: #ff853c !important;
+}
+
+body .pass-strength-result.good {
+    background-color: #ffec8b;
+    border-color: #fc0 !important;
+}
+
+body .pass-strength-result.short {
+    background-color: #ffa0a0;
+    border-color: #f04040 !important;
+}
+
+body .pass-strength-result.strong {
+    background-color: #c3ff88;
+    border-color: #8dff1c !important;
+}
+
+@media screen and (max-width: 499px) {
+    .wpfm-dashboard-container {
+        flex-direction: column;
+    }
+
+    .wpfm-dashboard-container .wpfm-dashboard-content {
+        width: 100%;
+        border-left: 1px solid #c0c0c0;
+    }
+
+    .wpfm-dashboard-container .wpfm-dashboard-navigation {
+        width: 100%;
+    }
+
+    .wpfm-dashboard-container .wpfm-dashboard-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .wpfm-dashboard-container .wpfm-dashboard-navigation ul li {
+        padding: 5px 15px;
+    }
+
+    .wpfm-dashboard-container .wpfm-dashboard-navigation ul li.active {
+        border-radius: 5px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .g-recaptcha > div, .g-recaptcha iframe {
+        width: 100% !important;
+    }
+
+    .g-recaptcha iframe .rc-anchor-normal {
+        width: inherit !important;
+    }
+}

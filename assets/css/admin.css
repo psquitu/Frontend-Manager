@@ -1,0 +1,14 @@
+.wpfm-wrap .form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.wpfm-wrap .form-wrap .nav-tab-wrap {
+    border-bottom: 1px solid #c3c4c7;
+}
+
+.wpfm-wrap .form-wrap .tab-contents .wpfm-content-group {
+    display: none;
+    transition: all 0.8s ease-in-out;
+}
