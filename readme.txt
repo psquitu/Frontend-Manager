@@ -37,6 +37,11 @@ All of the forms get an unique shortcode which you can paste on any page and the
 
 Registration Form Plugin also allows you to build registration forms using default templates.
 
+= Checkout Frontend Manager resources: =
+
+* <a href="https://github.com/psquitu/Frontend-Manager">Github Repository</a>
+
+
 == Installation ==
 
 After having installed the plugin:
@@ -87,6 +92,7 @@ redirected to the edit page with that post id. Then you'll see the edit post for
 3. Customizable Form with Individual Post Settings
 4. Dashboard Settings to Configure Posts
 5. Login, Restriction, Frontend Security
+
 
 == Changelog ==
 
