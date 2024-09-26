@@ -26,7 +26,7 @@ class Frontend_Form
         extract($atts);
         ob_start();
         if (!is_user_logged_in()) {
-            echo wp_kses_post('<div class="wpfm-message">' . __('You are not logged in', 'frontend-manager') . '</div>'),
+            echo wp_kses_post('<div class="wpfm-message">' . esc_html__('You are not logged in.', 'frontend-manager') . '</div>'),
 
             do_shortcode('[wpfm-login]');
 
@@ -36,17 +36,17 @@ class Frontend_Form
         $post_id = isset($_GET['pid']) ? intval(wp_unslash($_GET['pid'])) : 0;
 
         if (!$post_id) {
-            return '<div class="wpfm-info">' . __('Invalid post', 'frontend-manager') . '</div>';
+            return '<div class="wpfm-info">' . esc_html__('Invalid post.', 'frontend-manager') . '</div>';
         }
 
         if (get_settings_value('enable_post_edit', 'wpfm_settings', 'yes') !== 'yes') {
-            return '<div class="wpfm-info">' . __('Post Editing is disabled', 'frontend-manager') . '</div>';
+            return '<div class="wpfm-info">' . esc_html__('Post Editing is disabled.', 'frontend-manager') . '</div>';
         }
 
         $post = get_post($post_id);
 
         if (!current_user_can('delete_others_posts') && ($userdata->ID !== (int)$post->post_author)) {
-            return '<div class="wpfm-info">' . __('You are not allowed to edit', 'frontend-manager') . '</div>';
+            return '<div class="wpfm-info">' . esc_html__('You are not allowed to edit.', 'frontend-manager') . '</div>';
         }
 
         echo '<div class="wpfm-form-wrap">';
@@ -66,14 +66,14 @@ class Frontend_Form
         extract($atts);
         ob_start();
         if (!is_user_logged_in()) {
-            echo wp_kses_post('<div class="wpfm-message">' . __('You are not logged in', 'frontend-manager') . '</div>'),
+            echo wp_kses_post('<div class="wpfm-message">' . esc_html__('You are not logged in.', 'frontend-manager') . '</div>'),
 
             do_shortcode('[wpfm-login]');
             return;
         }
 
         if (!current_user_can('delete_others_posts')) {
-            return '<div class="wpfm-info">' . __('You are not allowed to edit', 'frontend-manager') . '</div>';
+            return '<div class="wpfm-info">' . esc_html__('You are not allowed to add.', 'frontend-manager') . '</div>';
         }
 
         echo '<div class="wpfm-form-wrap">';
@@ -518,7 +518,7 @@ class Frontend_Form
     {
         $this->form_fields = apply_filters("wpfm_form_fields", [
             [
-                'label' => __('Post Title *', 'frontend-manager'),
+                'label' => esc_html__('Post Title *', 'frontend-manager'),
                 'name' => 'post_title',
                 'type' => 'text',
                 'default' => '',
@@ -527,7 +527,7 @@ class Frontend_Form
                 'group' => 'post',
             ],
             [
-                'label' => __('Post Content *', 'frontend-manager'),
+                'label' => esc_html__('Post Content *', 'frontend-manager'),
                 'name' => 'post_content',
                 'type' => 'editor',
                 'default' => '',
@@ -537,8 +537,8 @@ class Frontend_Form
                 'group' => 'post',
             ],
             [
-                'label' => __('Featured Image', 'frontend-manager'),
-                'button_label' => __('Featured Image', 'frontend-manager'),
+                'label' => esc_html__('Featured Image', 'frontend-manager'),
+                'button_label' => esc_html__('Featured Image', 'frontend-manager'),
                 'name' => 'featured_image',
                 'type' => 'file',
                 'default' => '',

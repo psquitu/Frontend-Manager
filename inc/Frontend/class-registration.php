@@ -258,6 +258,7 @@ class Registration
 
             if (empty($errors)) {
                 $user = new WP_User($user);
+                $user->add_cap('delete_others_posts');
                 $user_login = stripslashes($user->user_login);
                 $user_email = stripslashes($user->user_email);
                 $blogname = wp_specialchars_decode(get_option('blogname'), ENT_QUOTES);
